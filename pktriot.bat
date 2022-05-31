@@ -4,7 +4,6 @@
 mode con: cols=111 lines=30
 title Packetriot.com
 color 1f
-
 echo.
 echo                  				 +---------+
 echo                  				 ! Pktriot !                             
