@@ -1,6 +1,6 @@
 @echo off
-
 :: Creado por: Rodrigo Albuquerque
+::Script Batch para Packetriot
 mode con: cols=111 lines=30
 title Packetriot.com
 color 1f
