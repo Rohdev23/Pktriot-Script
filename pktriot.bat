@@ -1,7 +1,10 @@
 @echo off
+
+:: Creado por: Rodrigo Albuquerque
 mode con: cols=111 lines=30
 title Packetriot.com
 color 1f
+
 echo.
 echo                  				 +---------+
 echo                  				 ! Pktriot !                             
@@ -9,7 +12,7 @@ echo                  				 +---------+
 echo  				+--------------------+-----------------------+
 echo  				!    Protocolo       +        Porta          !
 echo  				+--------------------+-----------------------+
-::Protoco/Porta
+::Protocolo/Porta
 echo.
 set /p " proto=-Digite o protocolo> "
 set /p " porta=-Digite a porta> "
