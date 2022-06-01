@@ -8,15 +8,22 @@ echo.
 echo                  				 +---------+
 echo                  				 ! Pktriot !                             
 echo                  				 +---------+            
-echo  				+--------------------+-----------------------+
-echo  				!    Protocolo       +        Porta          !
-echo  				+--------------------+-----------------------+
+echo  				+----------------------+--------------------+
+echo  				! Protocolos HTTP/TCP  +      Porta         !
+echo  				+----------------------+--------------------+
 ::Protocolo/Porta
 echo.
 set /p " proto=-Digite o protocolo> "
 set /p " porta=-Digite a porta> "
-cls
-::Condição
+::Condição 1
+if %proto% EQU tcp (goto inicio)
+if %proto% EQU http (goto inicio)else (
+echo.
+echo Error! Protocolo sem suporte, Enter para sair...
+pause >nul
+exit
+)
+::Condição 2
 if EXIST pktriot.exe (goto inicio)else (
 echo.
 echo Arquivo pktriot.exe ausente! 
