@@ -9,7 +9,7 @@ Windows X86/64 bits
 
 3 Executar pktriot.bat 
 
-#Script feito em Batch para automatizar
+# Script feito em Batch para automatizar
 Port Forwarding Packetriot
 
 
