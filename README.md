@@ -1,7 +1,7 @@
 # pktriot.bat
 
 Script feito em Batch para automatizar
-Port Forwarding Packetriot no Windows
+Port Forwarding Packetriot Windows
 
 1 Baixe o executável em
 https://packetriot.com/downloads
