@@ -9,7 +9,7 @@ echo.
 if Not exist pktriot.exe (
 	echo pktriot.exe ausente, saindo...
 		pause >nul
-				exit
+			exit
 )
 echo.
 echo                  				 +---------+
@@ -32,7 +32,7 @@ if /i %proto% EQU http (
 	echo.
 		echo -Protocolo sem suporte, Enter para sair...
 			pause >nul
-					exit
+				exit
 )
 :inicio 
 echo.
