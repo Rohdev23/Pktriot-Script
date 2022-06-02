@@ -6,9 +6,10 @@ title Packetriot.com
 color 1f
 echo.
 ::condição 1
-if Not exist pktriot.exe (echo pktriot.exe ausente, saindo...
-pause >nul
-exit
+if Not exist pktriot.exe (
+	echo pktriot.exe ausente, saindo...
+		pause >nul
+				exit
 )
 echo.
 echo                  				 +---------+
@@ -29,7 +30,7 @@ if /i %proto% EQU http (
 	goto inicio
 )else (
 	echo.
-		echo  Protocolo sem suporte, Enter para sair...
+		echo -Protocolo sem suporte, Enter para sair...
 			pause >nul
 					exit
 )
@@ -47,11 +48,11 @@ echo.
 choice /c "1234" /n /m "-Digite> "
 goto %errorlevel%
 :1
-pktriot.exe configure
+	pktriot.exe configure
 :2
-pktriot.exe %proto% %porta%
+	pktriot.exe %proto% %porta%
 :3
-rmdir /s %userprofile%\.pktriot
+	rmdir /s %userprofile%\.pktriot
 :4
-exit
+	exit
 pause>nul
