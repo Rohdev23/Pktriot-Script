@@ -22,12 +22,16 @@ echo.
 set /p " proto=-Digite o protocolo> "
 set /p " porta=-Digite a porta> "
 ::Condição 2
-if /i %proto% EQU tcp (goto inicio)
-if /i %proto% EQU http (goto inicio)else (
-echo.
-echo Error! Protocolo sem suporte, Enter para sair...
-pause >nul
-exit
+if /i %proto% EQU tcp (
+	goto inicio
+)
+if /i %proto% EQU http (
+	goto inicio
+)else (
+	echo.
+		echo  Protocolo sem suporte, Enter para sair...
+			pause >nul
+					exit
 )
 :inicio 
 echo.
