@@ -4,10 +4,11 @@
 mode con: cols=111 lines=30
 title Packetriot.com
 color 1f
+:retorno
 echo.
 ::condição 1
 if Not exist pktriot.exe (
-	echo pktriot.exe ausente, saindo...
+	echo pktriot.exe ausente, pressione qualquer tecla parar sair...
 		pause >nul
 			exit
 )
@@ -22,6 +23,7 @@ echo  				+----------------------+--------------------+
 echo.
 set /p " proto=-Digite o protocolo> "
 set /p " porta=-Digite a porta> "
+cls
 ::Condição 2
 if /i %proto% EQU tcp (
 	goto inicio
@@ -30,9 +32,11 @@ if /i %proto% EQU http (
 	goto inicio
 )else (
 	echo.
-		echo -Protocolo sem suporte, Enter para sair...
+		echo -Protocolo sem suporte, Tente novamente...
 			pause >nul
-				exit
+					cls
+						goto retorno
+				
 )
 :inicio 
 echo.
