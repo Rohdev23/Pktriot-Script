@@ -32,9 +32,9 @@ if /i %proto% EQU http (
 	goto inicio
 )else (
 	echo.
-		echo -Protocolo sem suporte, Tente novamente...
-			pause >nul
-				cls
+	  echo -Protocolo sem suporte, Tente novamente...
+		  pause >nul
+			 cls
 				goto retorno
 				
 )
