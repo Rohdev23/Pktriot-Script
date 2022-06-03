@@ -26,10 +26,10 @@ set /p " porta=-Digite a porta> "
 cls
 ::Condição 2
 if /i %proto% EQU tcp (
-	goto inicio
+  goto inicio
 )
 if /i %proto% EQU http (
-	goto inicio
+  goto inicio
 )else (
   echo.
   echo -Protocolo sem suporte, Tente novamente...
@@ -50,13 +50,13 @@ echo  				! 3 Deletar config   ! 4 Sair	        !
 echo  				+--------------------+------------------+
 echo.
 choice /c "1234" /n /m "-Digite> "
-	goto %errorlevel%
+  goto %errorlevel%
 :1
-	pktriot.exe configure
+  pktriot.exe configure
 :2
-	pktriot.exe %proto% %porta%
+  pktriot.exe %proto% %porta%
 :3
-	rmdir /s %userprofile%\.pktriot
+  rmdir /s %userprofile%\.pktriot
 :4
-	exit
+  exit
 pause>nul
