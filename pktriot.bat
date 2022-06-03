@@ -8,9 +8,9 @@ color 1f
 echo.
 ::condição 1
 if Not exist pktriot.exe (
-	echo pktriot.exe ausente, pressione qualquer tecla parar sair...
-		pause >nul
-			exit
+  echo pktriot.exe ausente, pressione qualquer tecla parar sair...
+    pause >nul
+        exit
 )
 echo.
 echo                  				 +---------+
