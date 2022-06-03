@@ -32,10 +32,10 @@ if /i %proto% EQU http (
 	goto inicio
 )else (
 	echo.
-		echo -Protocolo sem suporte, Tente novamente...
-			pause >nul
-					cls
-						goto retorno
+	echo -Protocolo sem suporte, Tente novamente...
+		pause >nul
+				cls
+					goto retorno
 				
 )
 :inicio 
@@ -50,7 +50,7 @@ echo  				! 3 Deletar config   ! 4 Sair	        !
 echo  				+--------------------+------------------+
 echo.
 choice /c "1234" /n /m "-Digite> "
-goto %errorlevel%
+	goto %errorlevel%
 :1
 	pktriot.exe configure
 :2
