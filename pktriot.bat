@@ -9,8 +9,8 @@ echo.
 ::condição 1
 if Not exist pktriot.exe (
   echo -pktriot.exe ausente, pressione qualquer tecla parar sair...
-    pause >nul
-        exit
+  pause >nul
+  exit
 )
 echo.
 echo                  				 +---------+
@@ -31,11 +31,11 @@ if /i %proto% EQU tcp (
 if /i %proto% EQU http (
 	goto inicio
 )else (
-echo.
+  echo.
   echo -Protocolo sem suporte, Tente novamente...
-    pause >nul
-        cls
-          goto retorno
+  pause >nul
+  cls
+  goto retorno
 				
 )
 :inicio 
