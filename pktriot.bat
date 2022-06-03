@@ -31,11 +31,11 @@ if /i %proto% EQU tcp (
 if /i %proto% EQU http (
 	goto inicio
 )else (
-	echo.
-	  echo -Protocolo sem suporte, Tente novamente...
-		  pause >nul
-			 cls
-				goto retorno
+echo.
+ echo -Protocolo sem suporte, Tente novamente...
+   pause >nul
+    cls
+     goto retorno
 				
 )
 :inicio 
